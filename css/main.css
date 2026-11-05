@@ -1,5 +1,6 @@
 /* Reset and base styles */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400, 500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400, 500;600;700&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -172,6 +173,113 @@ legend {
 
 body {
   font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.header {
+  background-image: url("/images/sliced-pears.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+.header__top-line {
+  max-height: 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+}
+.header__logo {
+  line-height: 150%;
+  color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.header__logo:hover {
+  color: rgb(172, 178, 104);
+  cursor: pointer;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__item {
+  line-height: 150%;
+  color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.header__item:hover {
+  color: rgb(172, 178, 104);
+  cursor: pointer;
+}
+.header__top-button {
+  display: flex;
+  text-align: center;
+  border: 2px solid;
+  border-color: #fff;
+  border-radius: 8px;
+  padding: 14px 24px;
+  width: 99px;
+  height: 52px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: border-color 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.header__top-button a {
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.header__top-button:hover {
+  border-color: rgb(172, 178, 104);
+  cursor: pointer;
+}
+.header__top-button:hover a {
+  color: rgb(172, 178, 104);
+}
+.header__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.header__title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.header__text {
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 35px;
+}
+.header__button {
+  border-radius: 8px;
+  padding: 20px 32px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background: #000;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.header__button a {
+  font-size: 24px;
+  line-height: 150%;
+  color: #fff;
+}
+.header__button:hover {
+  background-color: rgb(172, 178, 104);
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
